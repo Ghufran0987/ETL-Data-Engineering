@@ -1,3 +1,7 @@
+for row in soup.find_all('tbody')[3].find_all('tr'):
+    col = row.find_all('td')
+
+
 This code is using the BeautifulSoup library to scrape an HTML page. soup.find_all('tbody')[3] finds the fourth <tbody> element in the page, and .find_all('tr') finds all of the <tr> (table row) elements within that <tbody> element.
 
 The code then uses a for loop to iterate through each row (for row in soup.find_all('tbody')[3].find_all('tr')) and for each row it is using the .find_all('td') method to find all of the <td> (table data) elements within that row. It is storing the resulting list of <td> elements in the variable col.
